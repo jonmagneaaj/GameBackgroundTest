@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+}
+
+h1{
+    font-family: Roboto;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+h2{
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+h4{
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: normal;
+}
+
+h5{
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: Roboto;
+}
+
+p{
+    font-size: 16px;
+    font-family: Roboto;
+    color: white;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F6;
+}
+
+/*Cards*/
+
+#card{
+    margin: 0 auto;
+    width: 375px;
+    height: 812px;
+    background: #5BAC63;
+
+    background-image: url(BACKGROUND.png);
+    background-position: bottom;
+    animation: 20s linear 0s infinite animate;
+}
+#card2{
+    margin: 0 auto;
+    width: 375px;
+    height: 812px;
+    background: #446AF1;
+
+    background-image: url(BACKGROUND.png);
+    background-position: bottom;
+    animation: 20s linear 0s infinite animate;
+}
+
+.outer_content{
+    width: 355px;
+    margin: 0 auto;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    height: 21px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.content{
+    width: 335px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icon {
+    width: 20px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+
+.text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.choice h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.choice_select{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 18px;
+    width: 56px;
+    margin: 0 auto 14px auto;
+}
+
+.choice_selected{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 4px;
+    text-align: center;
+    justify-items: center;
+    height: 85px;
+    color: white;
+}
+
+.points{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+
+.choice_info{
+    text-align: center;
+    margin-bottom: 21px;
+}
+
+.photo_box{
+    width: 100%;
+    height: 152px;
+    background-color: white;
+    border: solid 1px #e34266;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.photo_content{
+    height: 60px;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-content: center;
+
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    align-self: center;
+}
+
+.photo_content img{
+    margin: 0 auto;
+}
+
+.bottom{
+    margin-top: 250px;
+
+    display: grid;
+    grid-template-columns: 3.8fr 1.2fr;
+}
+
+.button{
+    width: 165px;
+    height: 66px;
+    border-radius: 10px;
+    border: dashed 2px #e34266;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    justify-self: end;
+}
+
+.button h2{
+    color: #e34266;
+}
+
+.share{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    align-content: flex-end;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.share img{
+    margin-left: 5px;
+}
+.share h2{
+    color: white;
+}
+
+/*Boxes*/
+
+#box{
+    margin: 0 auto;
+    width: 285px;
+    height: 155px;
+    background: #446AF1;
+    border-radius: 10px;
+
+    background-image: url(BACKGROUND.png);
+    background-position: bottom;
+    animation: 20s linear 0s infinite animate;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    text-align: center;
+}
+
+#box2{
+    margin: 0 auto;
+    width: 191px;
+    height: 128px;
+    background: #5BAC63;
+    border-radius: 10px;
+
+    background-image: url(BACKGROUND.png);
+    background-position: bottom;
+    animation: 20s linear 0s infinite animate;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    color: white; 
+
+    display: grid;
+    grid-template-rows: 9fr 1fr;
+}
+
+#box2 h1{
+    text-align: center;
+    margin: auto 0;
+}
+#box2 h4{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+@keyframes animate {
+    from{
+        background-position: -50%, 0,
+    }
+    to{
+        background-position: 0, 100%;
+    }
+}
